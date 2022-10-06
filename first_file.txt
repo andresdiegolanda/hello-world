@@ -4,3 +4,4 @@ Add a line to first file.
 
 Add another line to first file
 Line 6
+Line 7
