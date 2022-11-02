@@ -1,0 +1,11 @@
+name: example-client-payload-action
+on: repository_dispatch
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: 'echo "field: ${{ github.event.client_payload.head_branch }}"'
+      - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
+
